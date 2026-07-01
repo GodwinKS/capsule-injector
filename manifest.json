@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Capsule Pill Injector",
+  "version": "2.0",
+  "description": "Floating pill interface to compress files via Gemini Pro and inject into Claude.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": [
+    "https://claude.ai/*",
+    "https://generativelanguage.googleapis.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Configure Gemini API Key"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://claude.ai/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
