@@ -1,4 +1,5 @@
-![Capsule Injector Demo](demo.gif)# 💊 Gemini Capsule Injector
+![Capsule Injector Demo](demo.gif)
+# 💊 Gemini Capsule Injector
 
 
 
